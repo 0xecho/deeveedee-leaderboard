@@ -36,7 +36,9 @@ export class LeaderboardControllerBase {
       select: {
         createdAt: true,
         id: true,
+        max_credits: true,
         name: true,
+        timeSurvived: true,
         updatedAt: true,
       },
     });
@@ -52,7 +54,9 @@ export class LeaderboardControllerBase {
       select: {
         createdAt: true,
         id: true,
+        max_credits: true,
         name: true,
+        timeSurvived: true,
         updatedAt: true,
       },
     });
@@ -69,7 +73,9 @@ export class LeaderboardControllerBase {
       select: {
         createdAt: true,
         id: true,
+        max_credits: true,
         name: true,
+        timeSurvived: true,
         updatedAt: true,
       },
     });
@@ -95,7 +101,9 @@ export class LeaderboardControllerBase {
         select: {
           createdAt: true,
           id: true,
+          max_credits: true,
           name: true,
+          timeSurvived: true,
           updatedAt: true,
         },
       });
@@ -121,7 +129,9 @@ export class LeaderboardControllerBase {
         select: {
           createdAt: true,
           id: true,
+          max_credits: true,
           name: true,
+          timeSurvived: true,
           updatedAt: true,
         },
       });

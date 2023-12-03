@@ -38,7 +38,29 @@ class LeaderboardWhereInput {
   @Field(() => StringNullableFilter, {
     nullable: true,
   })
+  max_credits?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
   name?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  timeSurvived?: StringNullableFilter;
 }
 
 export { LeaderboardWhereInput as LeaderboardWhereInput };

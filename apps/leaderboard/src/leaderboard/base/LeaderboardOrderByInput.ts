@@ -50,7 +50,29 @@ class LeaderboardOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
+  max_credits?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @IsOptional()
+  @IsEnum(SortOrder)
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
   name?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @IsOptional()
+  @IsEnum(SortOrder)
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  timeSurvived?: SortOrder;
 
   @ApiProperty({
     required: false,

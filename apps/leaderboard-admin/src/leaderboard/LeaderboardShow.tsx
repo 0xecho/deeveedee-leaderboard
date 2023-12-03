@@ -13,7 +13,9 @@ export const LeaderboardShow = (props: ShowProps): React.ReactElement => {
       <SimpleShowLayout>
         <DateField source="createdAt" label="Created At" />
         <TextField label="ID" source="id" />
+        <TextField label="Max Credits" source="max_credits" />
         <TextField label="Name" source="name" />
+        <TextField label="TimeSurvived" source="timeSurvived" />
         <DateField source="updatedAt" label="Updated At" />
       </SimpleShowLayout>
     </Show>

@@ -53,6 +53,13 @@ class FileLock:
         self.release()
         return False
 
+# intercept all responses and add CORS headers
+@app.after_request
+def add_cors_headers(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Headers"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "*"
+    return response
 
 @app.route("/leaderboard", methods=["POST"])
 def save_leaderboard():
